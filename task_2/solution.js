@@ -10,10 +10,10 @@ function calcShipping(sum, min, shipping) {
     IF (productsSum = 0) { // если productsSum равно 0,
      shippingSum = 0 // то shippingSum присвоить значение 0
     }
-else  If (productsSum >= freeShippingMinSum) {// если productsSum Больше или равна freeShippingMinSum,
+else  If (productsSum >= freeShippingMinSum) { // если productsSum Больше или равна freeShippingMinSum,
      shippingSum = 0// то shippingSum присвоить значение 0
     }
-else If (  productsSum < freeShippingMinSum && productsSum>0 ) { // если productsSum больше 0 и меньше freeShippingMinSum,
+else If (  productsSum < freeShippingMinSum && productsSum > 0 ) { // если productsSum больше 0 и меньше freeShippingMinSum,
      shippingSum = shippingPrice // то shippingSum присвоить значение shippingPrice
     }
     // Конец решения задания №2.1.
