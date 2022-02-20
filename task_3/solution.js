@@ -7,7 +7,7 @@ let price;
 let id;
 let title;
     item = {id: id, title : title , count: count, price: price} ;// product - объект вида {id: id, title: title, count: count, price: price}
-    // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
+    item = {id: 1, title: 'Пицца', count: 5, price: '500.00'};
     // id - идентификатор
     // title - наименование
     // price - цена
