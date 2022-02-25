@@ -47,7 +47,7 @@ function sendRequest(name, phone, address, goods, sum) {
 
     data.client = name + " " + phone;
 
-    data.goods = goods.title
+    data.goods = goods.title + goods.count;
 
     let jsonData = JSON.stringify({data: data}); 
 
