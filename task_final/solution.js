@@ -42,7 +42,7 @@ function sendRequest(name, phone, address, goods, sum) {
         data.goods.push(goods[i]);
     }
 
-    data.order.address = address;
+    data.order.address = "ул."+ address.street;
     data.order.sum = sum;
 
     data.client = name + " " + phone;
