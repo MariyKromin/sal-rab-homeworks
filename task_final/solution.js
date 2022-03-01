@@ -41,9 +41,9 @@
     let countOfGoods = goods.length;
      //const goods = [title, count];
     for (let i = 0; i < countOfGoods; i += 1) {
-       const elem = goods[i];
+        elem = goods[i];
         
-        goods.push (elem.title)
+        data.goods.push (elem.title)
     }
 
     data.order.address = "ул."+ " " + address.street + "," + " " +  "дом" + " " + address.house + "," + " " + address.entrance + " " + "подъезд" + "," + " " + address.floor + " " + "этаж"  + "," + " " + "кв" + " " + address.flat;
@@ -53,7 +53,7 @@
     
     
 
-    let jsonData = JSON.stringify({data: data; datgoods}); 
+    let jsonData = JSON.stringify({data: data}); 
 
     return jsonData;
 }
