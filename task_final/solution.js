@@ -43,7 +43,7 @@
     for (let i = 0; i < countOfGoods; i += 1) {
         elem = goods[i];
         
-        data.goods.push (elem.title, elem.count)
+        data.goods.push (elem) ;
     }
 
     data.order.address = "ул."+ " " + address.street + "," + " " +  "дом" + " " + address.house + "," + " " + address.entrance + " " + "подъезд" + "," + " " + address.floor + " " + "этаж"  + "," + " " + "кв" + " " + address.flat;
