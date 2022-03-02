@@ -50,7 +50,7 @@
     data.order.sum = sum;
 
     data.client = name + " " + phone;
-    data.goods = title + count;
+    
     
 
     let jsonData = JSON.stringify({data: data}); 
