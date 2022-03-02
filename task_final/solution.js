@@ -39,10 +39,10 @@
     let data = {goods: [], order: {}};
  
     let countOfGoods = goods.length;
-     //let goods = { title:[], count:[]};
+     
     for (let i = 0; i < countOfGoods; i += 1) {
-      data.goods[i] = {title: goods.title[i], count: goods.count[i]};  
-      //let elem = goods[i];
+      data.goods = {title: goods.title[i], count: goods.count[i]};  
+
         data.goods.push (goods[i].title) ;
         data.goods.push (goods[i].count) ;
     }
