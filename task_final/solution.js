@@ -41,8 +41,7 @@
     let countOfGoods = goods.length;
      
     for (let i = 0; i < countOfGoods; i += 1) {
-      data.goods = {title: goods.title[i], count: goods.count[i]};  
-
+      data.goods[i] = {title: goods.title[i], count: goods.count[i]};  
         data.goods.push (goods[i].title) ;
         data.goods.push (goods[i].count) ;
     }
@@ -51,7 +50,7 @@
     data.order.sum = sum;
 
     data.client = name + " " + phone;
-    
+    data.goods = title + count;
     
 
     let jsonData = JSON.stringify({data: data}); 
