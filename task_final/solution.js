@@ -39,11 +39,11 @@
     let data = {goods: [], order: {}};
  
     let countOfGoods = goods.length;
-     //const goods = [title, count];
+     data.goods = {title, count};
     for (let i = 0; i < countOfGoods; i += 1) {
-        elem = goods[i];
-        
-        data.goods.push (elem) ;
+        let elem = goods[i];
+        data.goods.push (elem.title);
+        data.goods.push (elem.count) ;
     }
 
     data.order.address = "ул."+ " " + address.street + "," + " " +  "дом" + " " + address.house + "," + " " + address.entrance + " " + "подъезд" + "," + " " + address.floor + " " + "этаж"  + "," + " " + "кв" + " " + address.flat;
