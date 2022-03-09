@@ -42,8 +42,8 @@
      
     for (let i = 0; i < countOfGoods; i += 1) {
       data.goods[i] = {title: goods[i].title, count: goods[i].count};  
-      data.goods.push(goods[i].title) ;
-      data.goods.push(goods[i].count);
+     // data.goods.push(goods[i].title) ;
+      //data.goods.push(goods[i].count);
       
     }
 
